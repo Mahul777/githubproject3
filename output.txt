@@ -1,0 +1,15 @@
+packets: 
+[5, 12, 0, 8, 21, 34, 7, 19, 0, 3]
+Middle-Out Swap:
+[34, 7, 19, 0, 3, 5, 12, 0, 8, 21]
+Sync-Bit Insertion:
+[34, 7, 19, 0, 3, 'SYNC-BIT', 5, 12, 0, 8, 21]
+Zero Removal:
+[34, 7, 19, 3, 'SYNC-BIT', 5, 12, 8, 21]
+Memory-Integrity Check:
+PASS: Original packet was not mutated.
+Original packet:
+[5, 12, 0, 8, 21, 34, 7, 19, 0, 3]
+
+Final scrambled packet:
+[34, 7, 19, 3, 'SYNC-BIT', 5, 12, 8, 21]
